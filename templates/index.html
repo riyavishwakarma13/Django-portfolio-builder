@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio</title>
+    <link href="{% static './style2.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div id="javascript_header">
+    </div>
+    <form action="POST">
+        <div class="form__header">
+            <h1>Build Your Portfolio</h1>
+            <p>Dashboard</p>
+        </div>
+        <div class="line-break">
+        </div>
+        <a class="button" href="/create-portfolio/ "> Create/Edit Portfolio</a>
+        <div class="line-break">
+        </div>
+        <a class="button" href="/portfolio/"> View Portfolio</a>
+        <div class="line-break">
+        </div>
+        <!-- <a class="button" style="background-color:red;" href="login"> Logout </a> -->
+    </form>
+
+    <!-- partial -->
+    <script src="{% static './script2.js' %}">
+    </script>
+</body>
+
+</html>
